@@ -13,5 +13,11 @@ A URL shortener service
 - Postman for checking requests
 
 # To run locally:
+- Go to default.js and change the mongoURI to "mongodb://localhost:27017/url-shortener" instead of "mongodb://url-mongo:27017/url-shortener",
 - Create simple local Docker MongoDB container
-- Pull the code and run: npm run dev
+- Run: npm run dev
+
+# Run using Docker containers:
+- Create external Docker network: docker network create short-url
+- Build docker-compose file: docker-compose build
+- Run docker-compose file: docker-compose up -d (in detach mode)
