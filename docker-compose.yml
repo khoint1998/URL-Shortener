@@ -1,0 +1,25 @@
+version: "2"
+# Create 2 services
+services:
+  app:
+    container_name: url-app
+    restart: always
+    build: .
+    networks:
+      - url-shortener
+    ports:
+      - "3000:3000"
+    links:
+      - mongo
+  mongo:
+    container_name: url-mongo
+    image: mongo
+    networks:
+      - url-shortener
+    ports:
+      - "27017:27017"
+
+networks:
+  url-shortener:
+    external: true
+    name: short-url
