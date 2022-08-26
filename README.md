@@ -2,6 +2,7 @@
 A URL shortener service
 
 # Working Stack:
+- Node.js Runtime Env for JS
 - MongoDB in the container (Compass for viewing)
 - Mongoose to talk with DB
 - Express.js to do the routing
