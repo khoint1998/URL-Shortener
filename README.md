@@ -5,7 +5,7 @@ A URL shortener service
 - MongoDB in the container (Compass for viewing)
 - Mongoose to talk with DB
 - Express.js to do the routing
-- config package to allow for global vars
+- config package to allow global vars
 - nodemon to watch the project (auto/hot restart after code saved)
 - URL checking package: valid-url
 - shortid package to generate short Id for short url
